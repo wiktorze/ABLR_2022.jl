@@ -1,0 +1,13 @@
+name = "ABLR_2022"
+uuid = "fefa9018-444f-459e-9921-ad2747a199f6"
+authors = ["Wiktor Zieliński <120274586+wiktorze@users.noreply.github.com> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.8"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
