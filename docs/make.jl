@@ -5,7 +5,7 @@ DocMeta.setdocmeta!(ABLR_2022, :DocTestSetup, :(using ABLR_2022); recursive=true
 
 makedocs(;
     modules=[ABLR_2022],
-    authors="Wiktor Zieliński <120274586+wiktorze@users.noreply.github.com> and contributors",
+    authors="Wiktor Zieliński <120274586+wiktorze@users.noreply.github.com> and Foo Hui Yann <foohuiyann@gmail.com>",
     sitename="ABLR_2022.jl",
     format=Documenter.HTML(;
         canonical="https://wiktorze.github.io/ABLR_2022.jl",
