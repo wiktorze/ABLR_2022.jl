@@ -42,8 +42,8 @@ In this section, we present the all replicated results displayed in the main tex
 | CORR of log-(agr. income, non-agr. income)   | 0.03                  | 0.4                           |
 
 ### Figure 1: Factor Allocations by Farm Productivity
-![Replication of Figure 4(a), p. 1346](https://github.com/foohuiyann/ABLR_ECTA2022.jl/blob/main/4_Results/Figure1.png?raw=true)
+![Replication of Figure 1](https://github.com/wiktorze/ABLR_2022.jl/blob/main/4_Results/Figure1.png?raw=true)
 
 
 ### Figure 2: Farm-specifc Distortions and Productivity
-![Replication of Figure 4(a), p. 1346](https://github.com/foohuiyann/ABLR_ECTA2022.jl/blob/main/4_Results/Figure2.png?raw=true)
+![Replication of Figure 2](https://github.com/wiktorze/ABLR_2022.jl/blob/main/4_Results/Figure2.pdf?raw=true)
