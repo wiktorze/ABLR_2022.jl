@@ -4,7 +4,7 @@
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://wiktorze.github.io/ABLR_2022.jl/dev/)
 [![Build Status](https://github.com/wiktorze/ABLR_2022.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/wiktorze/ABLR_2022.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
-This README describes the replication procedure for Adamapoulos et al. (2022). We translate code from the following files in the original replication package to Julia. Subsequently, we compile the results into an intermediate folder and we will use a single .jl file to produce the compiled version for quick reference.
+This README describes the replication procedure for "Misallocation, Selection and Productivity: A Quantitative Analysis with Panel Data from China" by Adamapoulos et al. (2022). We translate code from the following files in the original replication package to Julia. Subsequently, we compile the results into an intermediate folder and we will use a single .jl file to produce the compiled version for quick reference.
 
 Running time of reproducing all the results: 46 seconds.
 - CPU: Apple M1
