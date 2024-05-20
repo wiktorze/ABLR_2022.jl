@@ -32,6 +32,11 @@ The data used for this replication is available at the website of the Econometri
     - StatsBase
     - Statistics
 ## Files
+### Inputs and outputs table
+| File       | Input                  | Output                 |
+|------------|:----------------------|:----------------------|
+| Baseline.jl | 1_Data/clean_data.dta, 3_Code/function_replication.jl | 2_Intermediate/baseline/t1_col1.jld2, 2_Intermediate/baseline/t2_row1.jld2 |
+
 ### Compile.jl
 Reproduces Table 1, 2, 3 and Figures 1, 2 of the paper.
 ### Baseline.jl
