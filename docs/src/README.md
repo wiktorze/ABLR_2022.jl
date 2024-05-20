@@ -14,23 +14,23 @@ The data used for this replication is available at the website of the Econometri
 ## Software Requirements
 - Julia (version used for this replication: 1.10.3)
 - The following julia packages need to be installed. The versions of all packages can be found in Manifest.toml
-    CategoricalArrays
-    CSV
-    CovarianceMatrices
-    DataFrames
-    DataFramesMeta
-    FixedEffectModels
-    GLM
-    Ipopt
-    JLD2
-    JuMP
-    MAT
-    PanelDataTools
-    Plots
-    PrettyTables
-    StatFiles
-    StatsBase
-    Statistics
+    - CategoricalArrays
+    - CSV
+    - CovarianceMatrices
+    - DataFrames
+    - DataFramesMeta
+    - FixedEffectModels
+    - GLM
+    - Ipopt
+    - JLD2
+    - JuMP
+    - MAT
+    - PanelDataTools
+    - Plots
+    - PrettyTables
+    - StatFiles
+    - StatsBase
+    - Statistics
 ## Files
 ### Compile.jl
 Reproduces Table 1, 2, 3 and Figures 1, 2 of the paper.
