@@ -46,4 +46,4 @@ In this section, we present the all replicated results displayed in the main tex
 
 
 ### Figure 2: Farm-specifc Distortions and Productivity
-![Replication of Figure 2](https://github.com/wiktorze/ABLR_2022.jl/blob/main/4_Results/Figure2.pdf?raw=true)
+![Replication of Figure 2](https://github.com/wiktorze/ABLR_2022.jl/blob/main/4_Results/Figure2.png?raw=true)
