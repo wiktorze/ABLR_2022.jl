@@ -54,6 +54,7 @@ function fig1()
     plot!(df4.logSfei, df4.logyokeff, color = :red,linestyle = :dash, lw = 3, label = "Efficient allocation line", subplot = 4)
 
     savefig("4_Results/Figure1.pdf")
+    savefig("4_Results/Figure1.png")
     display(p)
 
 end

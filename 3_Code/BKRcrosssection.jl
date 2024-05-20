@@ -110,8 +110,3 @@ hci = round(hci, digits=2)
 t1_col3 = [string(coef_null); "($std_error)"; "[$lci, $hci]"]
 
 @save "2_Intermediate/BKRcrosssection/t1_col3_BKR.jld2" t1_col3
-#=
-save_object("2_Intermediate/BKRcrosssection/coef_null.jld2",coef_null)
-save_object("2_Intermediate/BKRcrosssection/std_error.jld2",std_error)
-save_object("2_Intermediate/BKRcrosssection/ci.jld2",[lci,hci])
-=#

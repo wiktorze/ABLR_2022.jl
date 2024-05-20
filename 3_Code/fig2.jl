@@ -9,5 +9,6 @@ function fig2()
     plot!(p, df5.logTFPQfei, predict(ols), color = :darkblue, lw = 2, label = "Fitted line")
     plot!(p, df5.logTFPQfei, df5.logTFPReff, color = :red, linestyle = :dash, lw = 3, label = "Efficient allocation line")
     savefig("4_Results/Figure2.pdf")
+    savefig("4_Results/Figure2.png")
     display(p)
 end
