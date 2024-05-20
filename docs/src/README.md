@@ -35,22 +35,22 @@ The data used for this replication is available at the website of the Econometri
 ### Inputs and outputs table
 | File       | Input                  | Output                 |
 |------------|:----------------------|:----------------------|
-| function_replication.jl | - | - |
-| function_simulation_eval.jl | - | - |
-| Baseline.jl | 1_Data/clean_data.dta, 3_Code/function_replication.jl | 2_Intermediate/baseline/t1_col1.jld2, 2_Intermediate/baseline/t2_row1.jld2, 2_Intermediate/baseline/collapsed_df.csv |
-| BKRbaseline.jl |  1_Data/clean_data.dta, 3_Code/function_replication.jl, 1_Data/StataFiles/TFP&TFPRbaseline.dta | 2_Intermediate/BKRbaseline/t1_col1_BKR.jld2|
-| Crosssection.jl | 1_Data/clean_data.dta | 2_Intermediate/crosssection/t1_col3.jld2, 2_Intermediate/crosssection/t2_row2_cs.jld2 |
-| BKRcrosssection.jl | 1_Data/clean_data.dta, 1_Data/StataFiles/TFP&TFPRcrosssection.dta | 2_Intermediate/BKRcrosssection/t1_col3_BKR.jld2
-| Crosssection_within.jl | 1_Data/clean_data.dta | 2_Intermediate/crosssection_within/EffGain.jld2 |
-| PlusAcrossVillages.jl | 1_Data/clean_data.dta, 3_Code/function_replication.jl | 2_Intermediate/PlusAcrossVillages/t1_col2.jld2, 2_Intermediate/PlusAcrossVillages/t2_row2.jld2 |
-| BKRPlusAcrossVillages.jl | 1_Data/clean_data.dta, 3_Code/function_replication.jl, 1_Data/StataFiles/TFP&TFPRpacrossvil.dta | 2_Intermediate/BKRPlusAcrossVillages/t1_col2_BKR.jld2 |
-| simulation.jl | 1_Data/MatlabFiles/CorrData.mat, 1_Data/MatlabFiles/NoCorrData.mat, 1_Data/MatlabFiles/Calibrated_Parameters.mat, 3_Code/function_simulation_eval.jl | 2_Intermediate/simulation/col1.jld2, 2_Intermediate/simulation/col2.jld2 |
-| t1.jl | 2_Intermediate/baseline/t1_col1.jld2, 2_Intermediate/BKRbaseline/t1_col1_BKR.jld2, 2_Intermediate/PlusAcrossVillages/t1_col2.jld2, 2_Intermediate/BKRPlusAcrossVillages/t1_col2_BKR.jld2, 2_Intermediate/crosssection/t1_col3.jld2, 2_Intermediate/BKRcrosssection/t1_col3_BKR.jld2 | copy console to 4_Results/table1.md |
-| t2.jl | 2_Intermediate/baseline/t2_row1.jld2, 2_Intermediate/crosssection_within/t2_row1_cs.jld2, 2_Intermediate/PlusAcrossVillages/t2_row2.jld2, 2_Intermediate/crosssection/t2_row2_cs.jld2 | copy console to 4_Results/table2.md |
-| t3.jl | 3_Code/simulation.jl | copy console to 4_Results/table3.md |
-| fig1.jl | 2_Intermediate/baseline/collapsed_df.csv | 4_Results/Figure1.pdf, 4_Results/Figure1.png |
-| fig2.jl | 2_Intermediate/baseline/collapsed_df.csv | 4_Results/Figure2.pdf, 4_Results/Figure2.png |
-| Compile.jl | 3_Code/t1.jl, 3_Code/t2.jl, 3_Code/simulation.jl, 3_Code/function_simulation_eval.jl, 3_Code/t3.jl, 3_Code/fig1.jl, 3_Code/fig2.jl | copy console to 4_Results/tableN.md 4_Results/Figure1.pdf, 4_Results/Figure1.png, 4_Results/Figure2.pdf, 4_Results/Figure2.png |
+| function\\_replication.jl | - | - |
+| function\_simulation\_eval.jl | - | - |
+| Baseline.jl | 1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl | 2\_Intermediate/baseline/t1\_col1.jld2, 2\_Intermediate/baseline/t2\_row1.jld2, 2\_Intermediate/baseline/collapsed\_df.csv |
+| BKRbaseline.jl |  1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl, 1\_Data/StataFiles/TFP&TFPRbaseline.dta | 2\_Intermediate/BKRbaseline/t1\_col1\_BKR.jld2|
+| Crosssection.jl | 1\_Data/clean\_data.dta | 2\_Intermediate/crosssection/t1\_col3.jld2, 2\_Intermediate/crosssection/t2\_row2\_cs.jld2 |
+| BKRcrosssection.jl | 1\_Data/clean\_data.dta, 1\_Data/StataFiles/TFP&TFPRcrosssection.dta | 2\_Intermediate/BKRcrosssection/t1\_col3\_BKR.jld2
+| Crosssection\_within.jl | 1\_Data/clean\_data.dta | 2\_Intermediate/crosssection\_within/EffGain.jld2 |
+| PlusAcrossVillages.jl | 1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl | 2\_Intermediate/PlusAcrossVillages/t1\_col2.jld2, 2\_Intermediate/PlusAcrossVillages/t2\_row2.jld2 |
+| BKRPlusAcrossVillages.jl | 1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl, 1\_Data/StataFiles/TFP&TFPRpacrossvil.dta | 2\_Intermediate/BKRPlusAcrossVillages/t1\_col2\_BKR.jld2 |
+| simulation.jl | 1\_Data/MatlabFiles/CorrData.mat, 1\_Data/MatlabFiles/NoCorrData.mat, 1\_Data/MatlabFiles/Calibrated\_Parameters.mat, 3\_Code/function\_simulation\_eval.jl | 2\_Intermediate/simulation/col1.jld2, 2\_Intermediate/simulation/col2.jld2 |
+| t1.jl | 2\_Intermediate/baseline/t1\_col1.jld2, 2\_Intermediate/BKRbaseline/t1\_col1\_BKR.jld2, 2\_Intermediate/PlusAcrossVillages/t1\_col2.jld2, 2\_Intermediate/BKRPlusAcrossVillages/t1\_col2\_BKR.jld2, 2\_Intermediate/crosssection/t1\_col3.jld2, 2\_Intermediate/BKRcrosssection/t1\_col3\_BKR.jld2 | copy console to 4\_Results/table1.md |
+| t2.jl | 2\_Intermediate/baseline/t2\_row1.jld2, 2\_Intermediate/crosssection\_within/t2\_row1\_cs.jld2, 2\_Intermediate/PlusAcrossVillages/t2\_row2.jld2, 2\_Intermediate/crosssection/t2\_row2\_cs.jld2 | copy console to 4\_Results/table2.md |
+| t3.jl | 3\_Code/simulation.jl | copy console to 4\_Results/table3.md |
+| fig1.jl | 2\_Intermediate/baseline/collapsed\_df.csv | 4\_Results/Figure1.pdf, 4\_Results/Figure1.png |
+| fig2.jl | 2\_Intermediate/baseline/collapsed\_df.csv | 4\_Results/Figure2.pdf, 4\_Results/Figure2.png |
+| Compile.jl | 3\_Code/t1.jl, 3\_Code/t2.jl, 3\_Code/simulation.jl, 3\_Code/function\_simulation\_eval.jl, 3\_Code/t3.jl, 3\_Code/fig1.jl, 3\_Code/fig2.jl | copy console to 4\_Results/tableN.md 4\_Results/Figure1.pdf, 4\_Results/Figure1.png, 4\_Results/Figure2.pdf, 4\_Results/Figure2.png |
 
 
 ### Compile.jl
