@@ -14,6 +14,8 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
+        "Results" => "results.md",
+        "ReadMe" => "README.md",
     ],
 )
 
