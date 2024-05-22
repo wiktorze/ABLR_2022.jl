@@ -1,8 +1,7 @@
 module ABLR_2022
-
+using JLD2, MAT, Statistics, JuMP, Ipopt, PrettyTables, GLM, Plots, DataFrames, CSV
+export compile
 function compile()
-    using JLD2, MAT, Statistics, JuMP, Ipopt, PrettyTables, GLM, Plots, DataFrames, CSV
-
     ### Compiling Table 1
     include("t1.jl")
     t1(latex = false)
