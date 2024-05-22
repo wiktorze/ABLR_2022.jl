@@ -4,6 +4,9 @@
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://wiktorze.github.io/ABLR_2022.jl/dev/)
 [![Build Status](https://github.com/wiktorze/ABLR_2022.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/wiktorze/ABLR_2022.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
+The project was created for Computational Economics course led by Florian Oswald at Sciences Po Paris:
+https://floswald.github.io/NumericalMethods/
+
 This README describes the replication procedure for "Misallocation, Selection and Productivity: A Quantitative Analysis with Panel Data from China" by Adamapoulos et al. (2022). We translate code from the following files in the original replication package to Julia. Subsequently, we compile the results into an intermediate folder and we will use a single .jl file to produce the compiled version for quick reference.
 
 Running time of reproducing all the results: 46 seconds.
@@ -35,7 +38,31 @@ The data used for this replication is available at the website of the Econometri
     - StatFiles
     - StatsBase
     - Statistics
+
+## How to run the code
+To run the code, set the directory as the downloaded folder, so xxx/ABLR_2022.jl/. Then, run 3_Code/Compile.jl to produce all the results. To produce the intermediate results for tables 1, 2 and figures 1,2, run all the files from 3_Code that are not functions: Baseline.jl, BKRbaseline.jl, Crosssection.jl, BKRcrosssection.jl, Crosssection_within.jl, PlusAcrossVillages.jl, BKRPlusAcrossVillages.jl.
+
 ## Files
+### Inputs and outputs table
+| File       | Input                  | Output                 |
+|------------|:----------------------|:----------------------|
+| function\_replication.jl | - | - |
+| function\_simulation\_eval.jl | - | - |
+| Baseline.jl | 1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl | 2\_Intermediate/baseline/t1\_col1.jld2, 2\_Intermediate/baseline/t2\_row1.jld2, 2\_Intermediate/baseline/collapsed\_df.csv |
+| BKRbaseline.jl |  1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl, 1\_Data/StataFiles/TFP&TFPRbaseline.dta | 2\_Intermediate/BKRbaseline/t1\_col1\_BKR.jld2|
+| Crosssection.jl | 1\_Data/clean\_data.dta | 2\_Intermediate/crosssection/t1\_col3.jld2, 2\_Intermediate/crosssection/t2\_row2\_cs.jld2 |
+| BKRcrosssection.jl | 1\_Data/clean\_data.dta, 1\_Data/StataFiles/TFP&TFPRcrosssection.dta | 2\_Intermediate/BKRcrosssection/t1\_col3\_BKR.jld2
+| Crosssection\_within.jl | 1\_Data/clean\_data.dta | 2\_Intermediate/crosssection\_within/EffGain.jld2 |
+| PlusAcrossVillages.jl | 1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl | 2\_Intermediate/PlusAcrossVillages/t1\_col2.jld2, 2\_Intermediate/PlusAcrossVillages/t2\_row2.jld2 |
+| BKRPlusAcrossVillages.jl | 1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl, 1\_Data/StataFiles/TFP&TFPRpacrossvil.dta | 2\_Intermediate/BKRPlusAcrossVillages/t1\_col2\_BKR.jld2 |
+| simulation.jl | 1\_Data/MatlabFiles/CorrData.mat, 1\_Data/MatlabFiles/NoCorrData.mat, 1\_Data/MatlabFiles/Calibrated\_Parameters.mat, 3\_Code/function\_simulation\_eval.jl | 2\_Intermediate/simulation/col1.jld2, 2\_Intermediate/simulation/col2.jld2 |
+| t1.jl | 2\_Intermediate/baseline/t1\_col1.jld2, 2\_Intermediate/BKRbaseline/t1\_col1\_BKR.jld2, 2\_Intermediate/PlusAcrossVillages/t1\_col2.jld2, 2\_Intermediate/BKRPlusAcrossVillages/t1\_col2\_BKR.jld2, 2\_Intermediate/crosssection/t1\_col3.jld2, 2\_Intermediate/BKRcrosssection/t1\_col3\_BKR.jld2 | copy console to 4\_Results/table1.md |
+| t2.jl | 2\_Intermediate/baseline/t2\_row1.jld2, 2\_Intermediate/crosssection\_within/t2\_row1\_cs.jld2, 2\_Intermediate/PlusAcrossVillages/t2\_row2.jld2, 2\_Intermediate/crosssection/t2\_row2\_cs.jld2 | copy console to 4\_Results/table2.md |
+| t3.jl | 3\_Code/simulation.jl | copy console to 4\_Results/table3.md |
+| fig1.jl | 2\_Intermediate/baseline/collapsed\_df.csv | 4\_Results/Figure1.pdf, 4\_Results/Figure1.png |
+| fig2.jl | 2\_Intermediate/baseline/collapsed\_df.csv | 4\_Results/Figure2.pdf, 4\_Results/Figure2.png |
+| Compile.jl | 3\_Code/t1.jl, 3\_Code/t2.jl, 3\_Code/simulation.jl, 3\_Code/function\_simulation\_eval.jl, 3\_Code/t3.jl, 3\_Code/fig1.jl, 3\_Code/fig2.jl | copy console to 4\_Results/tableN.md 4\_Results/Figure1.pdf, 4\_Results/Figure1.png, 4\_Results/Figure2.pdf, 4\_Results/Figure2.png |
+
 ### Compile.jl
 Reproduces Table 1, 2, 3 and Figures 1, 2 of the paper.
 ### Baseline.jl

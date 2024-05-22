@@ -1,4 +1,6 @@
 # Overview
+The project was created for Computational Economics course led by Florian Oswald at Sciences Po Paris:
+https://floswald.github.io/NumericalMethods/
 
 This README describes the replication procedure for "Misallocation, Selection and Productivity: A Quantitative Analysis with Panel Data from China" by Adamapoulos et al. (2022). We translate code from the following files in the original replication package to Julia. Subsequently, we compile the results into an intermediate folder and we will use a single .jl file to produce the compiled version for quick reference.
 
@@ -31,11 +33,15 @@ The data used for this replication is available at the website of the Econometri
     - StatFiles
     - StatsBase
     - Statistics
+
+## How to run the code
+To run the code, set the directory as the downloaded folder, so xxx/ABLR_2022.jl/. Then, run 3_Code/Compile.jl to produce all the results. To produce the intermediate results for tables 1, 2 and figures 1,2, run all the files from 3_Code that are not functions: Baseline.jl, BKRbaseline.jl, Crosssection.jl, BKRcrosssection.jl, Crosssection_within.jl, PlusAcrossVillages.jl, BKRPlusAcrossVillages.jl.
+
 ## Files
 ### Inputs and outputs table
 | File       | Input                  | Output                 |
 |------------|:----------------------|:----------------------|
-| function\\_replication.jl | - | - |
+| function\_replication.jl | - | - |
 | function\_simulation\_eval.jl | - | - |
 | Baseline.jl | 1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl | 2\_Intermediate/baseline/t1\_col1.jld2, 2\_Intermediate/baseline/t2\_row1.jld2, 2\_Intermediate/baseline/collapsed\_df.csv |
 | BKRbaseline.jl |  1\_Data/clean\_data.dta, 3\_Code/function\_replication.jl, 1\_Data/StataFiles/TFP&TFPRbaseline.dta | 2\_Intermediate/BKRbaseline/t1\_col1\_BKR.jld2|
