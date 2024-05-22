@@ -23,6 +23,6 @@ function compile()
     include("fig2.jl")
     fig2()
 
-    end
+end
 
 end
