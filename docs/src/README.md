@@ -35,7 +35,14 @@ The data used for this replication is available at the website of the Econometri
     - Statistics
 
 ## How to run the code
-To run the code, set the directory as the downloaded folder, so xxx/ABLR_2022.jl/. Then, run 3_Code/Compile.jl to produce all the results. To produce the intermediate results for tables 1, 2 and figures 1,2, run all the files from 3_Code that are not functions: Baseline.jl, BKRbaseline.jl, Crosssection.jl, BKRcrosssection.jl, Crosssection_within.jl, PlusAcrossVillages.jl, BKRPlusAcrossVillages.jl.
+To run the code, set the directory as the downloaded folder, so run cd("YourDownloadPath/ABLR_2022.jl-main"). 
+
+Then, add all the packages needed to run the code. In Julia REPL, type "]" and "add CategoricalArrays, CSV, CovarianceMatrices, DataFrames, DataFramesMeta, FixedEffectModels, GLM, Ipopt, JLD2, JuMP, MAT, PanelDataTools, Plots, PrettyTables, StatFiles, StatsBase, Statistics". 
+
+Then, use backspace to come back to julia mode. Run 3_Code/Compile.jl to produce all the results. Tables will display in the console while figures will be saved in 4_Results folder.
+
+To produce the intermediate results for tables 1, 2 and figures 1,2, run all the files from 3_Code that are not functions: Baseline.jl, BKRbaseline.jl, Crosssection.jl, BKRcrosssection.jl, Crosssection_within.jl, PlusAcrossVillages.jl, BKRPlusAcrossVillages.jl.
+
 
 ## Files
 ### Inputs and outputs table
