@@ -1,5 +1,4 @@
 function t3(;latex = false)
-    include("simulation.jl")
     names = (["Real Agricultural Productivity (Ya=Na)", 
     "Share of Employment in Agriculture (Na) (%)",
     "TFP in Agriculture (TFP_a)",
