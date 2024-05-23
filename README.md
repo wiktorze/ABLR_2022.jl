@@ -42,11 +42,17 @@ The data used for this replication is available at the website of the Econometri
 ## How to run the code
 ### From the terminal using module
 Step 0: Download the package and set working directory to the main folder of the package, so run cd("YourDownloadPath/ABLR_2022.jl-main"). 
+
 Step 1: Open the Julia REPL
+
 Step 2: Enter the Julia package manager by typing ']'
+
 Step 3: Enter the following command into the Julia package manager: 'add https://github.com/wiktorze/ABLR_2022.jl'
+
 Step 4: Exit the Julia package manager and return to the Julia REPL by typing 'Backspace'
+
 Step 5: Enter the following command into the Julia REPL: 'using ABLR_2022'
+
 Step 6: Execute the following command: 'results()'. Following execution of the 'results()' function in the Julia REPL, the tables will display in the console in markdown format. The figures will be saved to 4_Results/.
 ### Manually
 To run the code, set the directory as the downloaded folder, so run cd("YourDownloadPath/ABLR_2022.jl-main"). 
