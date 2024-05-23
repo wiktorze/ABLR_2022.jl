@@ -44,7 +44,8 @@ function Table3(CorrData = 1)
     global An = par["An"]
     global aBAR = par["aBAR"]
 
-    m = Model(Ipopt.Optimizer, print_level=0)
+    m = Model(Ipopt.Optimizer)
+    set_silent(m)
     @variable(m, x >= 1e-6, start = guess)
     @NLobjective(m,  Min, simulation_eval(x, wn))
     JuMP.optimize!(m)
