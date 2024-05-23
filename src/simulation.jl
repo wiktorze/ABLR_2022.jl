@@ -1,5 +1,4 @@
 function Table3(CorrData = 1)
-    include("function_simulation_eval.jl")
 
     # #Generate data for benchmark economy
     if CorrData == 1
